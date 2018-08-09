@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css?family=Exo:500|Hind+Madurai");
+$breakpoint-tablet: 768px;
+$whitish: #eadeda;
+$purplish: #511730;
+
+* {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+body {
+  font-size: 20px;
+  font-family: "Hind Madurai", sans-serif;
+  background-color: $purplish;
+  color: $whitish;
+  h1,
+  h2 {
+    font-family: "Exo", sans-serif;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2.5em;
+  }
+  p {
+    margin-top: 20px;
+    font-size: 1.5em;
+  }
+}
+@media (min-width: $breakpoint-tablet) {
+  body {
+    font-size: 14px;
+  }
+  .mockup {
+    height: auto;
+    max-width: 300px;
+  }
+  .left {
+    margin-left: 90px;
+  }
+  .svg-columns {
+    max-width: 100%;
+    height: 700px;
+  }
+  .svg-stores {
+    max-width: 200px;
+    height: auto;
+  }
+  .buttons {
+    margin: 20px;
+  }
+  .text {
+    margin: 100px 0 0 60px;
+  }
+  .main {
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    height: 100vh;
+    margin-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+    background-image: url("images/main-background.png");
+    background-size: cover;
+    box-sizing: border-box;
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+  }
+  .columns {
+    position: relative;
+    img {
+      height: auto;
+      max-width: 40%;
+    }
+    height: 150vh;
+    &:before {
+      content: url("images/hanger.svg"); 
+      position: absolute; 
+      z-index: 100000; 
+      right: 30px;
+      top: -400px;
+    }
+  }
+  .column {
+    padding: 50px 40px;
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    box-sizing: border-box;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
