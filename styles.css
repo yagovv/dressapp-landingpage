@@ -82,7 +82,14 @@ body {
     display: flex;
     justify-content: center;
     height: 50vh;
-    box-sizing: border-box; } }
+    box-sizing: border-box; }
+
+  footer {
+    padding-top: 30px;
+    text-align: center;
+    margin-top: 100px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.7); } }
 @keyframes fadeInDown {
   from {
     opacity: 0;
